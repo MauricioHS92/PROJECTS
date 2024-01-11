@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@400;500;600&family=Montserrat:wght@700&family=Roboto:wght@700&family=Teko:wght@600&display=swap');
+
+:root {
+    --gap: 3rem;
+    --primary-color: #FF0000;
+    --light-gray-color: #EEE;
+    --assets-color: #03002c;
+    --white: #ffffff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: inter, sans-serif;
+    font-weight: 500;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.main-content {
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--assets-color);
+    position: fixed;
+    padding: 0 10rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid var(--light-gray-color-color);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.main-content h1 a {
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.main-content ul {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-content ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.9rem;
+    color: var(--light-gray-color);
+    position: relative;
+}
+
+.main-content ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1.1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.main-content ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.hero-about {
+    max-width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg-page-about.svg);
+    padding-top: -20px;
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--white);
+}
+
+.title-page {
+    color: var(--light-gray-color);
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    padding-top: 12rem;
+    padding-left: 15rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--assets-color);
+    text-shadow: var(--assets-color) 5px 0px 5px;
+}
+
+.hero-content-about {
+    max-width: 1120px;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+p {
+    word-wrap: break-word;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--gap);
+    font-size: 1.8rem;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+p::first-letter {
+    font-size: 6rem;
+    font-weight: bold;
+    float: left;
+    margin: -10px 5px;
+}
+
+.hero-specialities {
+    background-image: url('../img/terno.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-content-specialities {
+    max-width: 1120px;
+    margin: 0 auto;
+    background: var(--light-gray-color);
+    display: flex;
+    align-items: center;
+}
+
+.hero-carrear {
+    height: 100vh;
+}
+
+.hero-content-carrear {
+    max-width: 1120px;
+    height: 60vh;
+    margin: 0 auto;
+    background: var(--light-gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrear-list li p {
+    font-size: 2rem;
+    color: var(--assets-color);
+    padding: 20px;
+}
+
+figcaption {
+    background-color: var(--assets-color);
+    color: var(--light-gray-color);
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.hero-office iframe {
+    height: 500px;
+    width: 50%;
+    background: var(--light-gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.hero-office {
+    background-image: url('../img/jusica-balanca.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+}
+
+.hero-content-contact {
+    height: 80vh;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+input::placeholder {
+    color: #5c5c5c;
+}
+
+body textarea {
+    font-family: sans-serif;
+}
+
+.hero-content-contact form {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid var(--assets-color);
+    border-radius: 0.5rem;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+form input[type="submit"] {
+    background: var(--primary-color);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background: var(--assets-color);
+    color: var(--primary-color);
+}
+
+form textarea {
+    height: 200px;
+}
